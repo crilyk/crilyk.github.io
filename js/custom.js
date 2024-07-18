@@ -31,7 +31,7 @@ function(){
 		v=i[w-1];
 		return{
 			l:w,
-			z:o(v,"zIndex",10),
+			z:o(v,"zIndex",999),
 			o:o(v,"opacity",0.5),
 			c:o(v,"color","51,153,255"),
 			n:o(v,"count",99)
@@ -90,28 +90,28 @@ function(){
 
 
 //鼠标点击特效
-			var a_idx=0;
-			jQuery(document).ready(function($){
-			  addTips = function(e){
-				var a= new Array("走", "和我", "去看", "星星", "呀");
-				var i=$("<span />").text(a[a_idx]);
-				a_idx=(a_idx+1)%a.length;
-				var x=e.pageX,y=e.pageY;
-				i.css({
-				  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
-				  "top":y-20,
-				  "left":x,
-				  "position":"absolute",
-				  "font-weight":"bold",
-				  "color":"#FFFACD"
-				});
+		// 	var a_idx=0;
+		// 	jQuery(document).ready(function($){
+		// 	  addTips = function(e){
+		// 		var a= new Array("走", "和我", "去看", "星星", "呀");
+		// 		var i=$("<span />").text(a[a_idx]);
+		// 		a_idx=(a_idx+1)%a.length;
+		// 		var x=e.pageX,y=e.pageY;
+		// 		i.css({
+		// 		  "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+		// 		  "top":y-20,
+		// 		  "left":x,
+		// 		  "position":"absolute",
+		// 		  "font-weight":"bold",
+		// 		  "color":"#FFFACD"
+		// 		});
 		 
-				$("body").append(i);
-				i.animate({"top": y-180,"opacity":0},1500,function(){i.remove()})
-				return false;
-			  }
-			  //绑定鼠标左键
-			  $("body").click(addTips);
-			  //绑定鼠标左键
-			  $("body").bind("contextmenu",addTips)
-		  });
+		// 		$("body").append(i);
+		// 		i.animate({"top": y-180,"opacity":0},1500,function(){i.remove()})
+		// 		return false;
+		// 	  }
+		// 	  //绑定鼠标左键
+		// 	  $("body").click(addTips);
+		// 	  //绑定鼠标左键
+		// 	  $("body").bind("contextmenu",addTips)
+		//   });
