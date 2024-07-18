@@ -31,7 +31,7 @@ function(){
 		v=i[w-1];
 		return{
 			l:w,
-			z:o(v,"zIndex",999),
+			z:o(v,"zIndex",4),
 			o:o(v,"opacity",0.5),
 			c:o(v,"color","248,248,255"),
 			n:o(v,"count",99)
