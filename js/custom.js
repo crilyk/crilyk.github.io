@@ -33,7 +33,7 @@ function(){
 			l:w,
 			z:o(v,"zIndex",999),
 			o:o(v,"opacity",0.5),
-			c:o(v,"color","51,153,255"),
+			c:o(v,"color","248,248,255"),
 			n:o(v,"count",99)
 		}
 	}
