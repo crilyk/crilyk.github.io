@@ -24,7 +24,7 @@
 <meta property="og:description" content="大二暑假练习算法Day1">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-17T02:25:34.000Z">
-<meta property="article:modified_time" content="2024-07-19T08:01:25.383Z">
+<meta property="article:modified_time" content="2024-07-19T08:06:12.796Z">
 <meta property="article:author" content="Crilyk">
 <meta property="article:tag" content="练习记录">
 <meta name="twitter:card" content="summary_large_image">
@@ -269,7 +269,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          607 字
+          603 字
         
       </span>
     
@@ -396,7 +396,7 @@
 <a style="font-weight: bold;">数组的最大长度取决于系统堆的最大值</a><br>
 对于定义为int的数组，最大能开到<span class="label label-default">518028</span>。
 </details>
-无法暴力求解，那就只好想想别的办法了。仔细想想，这个式子最后有个mod7，这意味着答案一共就<span class="label label-success">七种可能</span>，那么答案非常显而易见了，完全不需要那么大的数组，这道题的本质是希望我能<span class="label label-success">找到一个循环周期</span>，七种f(n-1)，七种f(n-2)，决定了一个f(n)，也就是说最多会有7*7=49种情况。同时因为f(1)和f(2)是已经给定的，因此最多51个数之后一定会产生一个循环，那么数组开到a[51]就足够了。
+无法暴力求解，那就只好想想别的办法了。这个式子最后有个mod7，这意味着答案一共就<span class="label label-success">七种可能</span>，那么答案非常显而易见了，完全不需要那么大的数组，这道题的本质是希望我能<span class="label label-success">找到一个循环周期</span>，七种f(n-1)，七种f(n-2)，决定了一个f(n)，也就是说最多会有7*7=49种情况。同时因为f(1)和f(2)是已经给定的，因此最多51个数之后一定会产生一个循环，那么数组开到a[51]就足够了。<br>
 之后需要做的就是想办法找到这个循环的起始点和这个循环的长度了。
 
 <p><a id="demo2"></a></p>
