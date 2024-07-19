@@ -24,7 +24,7 @@
 <meta property="og:description" content="大二暑假练习算法Day1">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-17T02:25:34.000Z">
-<meta property="article:modified_time" content="2024-07-19T05:29:39.006Z">
+<meta property="article:modified_time" content="2024-07-19T06:57:42.023Z">
 <meta property="article:author" content="Crilyk">
 <meta property="article:tag" content="练习记录">
 <meta name="twitter:card" content="summary_large_image">
@@ -269,7 +269,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          56 字
+          294 字
         
       </span>
     
@@ -280,7 +280,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -342,8 +342,10 @@
             
               <div class="markdown-body">
                 
-                <p>暑假留校练算法~今天是第一天！</p>
-<h2 id="练习题地址"><a href="#练习题地址" class="headerlink" title="练习题地址"></a>练习题地址</h2><table>
+                <blockquote><p>暑假留校练算法~今天是第一天！<br>只想看代码的话直接点击对应题目的名称就可以跳过去，题目地址点击“点我看原题”可以跳转。</p>
+</blockquote>
+
+<h2 id="今日练习题地址"><a href="#今日练习题地址" class="headerlink" title="今日练习题地址"></a>今日练习题地址</h2><table>
 <thead>
 <tr>
 <th>题目名称</th>
@@ -352,23 +354,50 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>Fluid Docs</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a></td>
-<td align="right">Fluid 官方文档</td>
+<td><a href="#demo">HDU1001:Sum Problem</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=1001">点我看原题</a></td>
+<td align="right"><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span></td>
 </tr>
 <tr>
-<td>Hexo-theme-fluid</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></td>
-<td align="right">Fluid Github Repo</td>
+<td><a href="#demo1">HDU1005:Number Sequence</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=1005">点我看原题</a></td>
+<td align="right"><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span></td>
 </tr>
 <tr>
-<td>Fluid Blog</td>
-<td align="center"><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">https://hexo.fluid-dev.com/</a></td>
-<td align="right">Fluid 官方博客</td>
+<td><a href="#demo2">HDU1021:Fibonacci Again</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=1021">点我看原题</a></td>
+<td align="right"><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span></td>
+</tr>
+<tr>
+<td><a href="#demo2">HDU1061:Rightmost Digit</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=1061">点我看原题</a></td>
+<td align="right"><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe62b;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span><span class="iconfont">&#xe646;</span></td>
 </tr>
 </tbody></table>
-<p><span class="iconfont">&#xe62b;</span></p>
+<h2 id="每题分析"><a href="#每题分析" class="headerlink" title="每题分析"></a>每题分析</h2><h3 id="HDU1001-Sum-Problem"><a href="#HDU1001-Sum-Problem" class="headerlink" title="HDU1001:Sum Problem"></a>HDU1001:Sum Problem</h3><blockquote><p>计算从1加到输入的n的总和。<br>要是这题都做不出来，那我算是<a style="font-weight: bold;">白学了</a>。</p>
+</blockquote>
 
+<p><a id="demo"></a></p>
+<p><span style="color: #483D8B; ">献上我的小代码：</span></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std; <br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc, <span class="hljs-type">char</span>** argv)</span> </span>&#123;<br>	<span class="hljs-type">int</span> n=<span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span>(cin&gt;&gt;n)&#123;<br>    	<span class="hljs-type">int</span> x=<span class="hljs-number">0</span>;<br>    	<span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;j++)&#123;<br>    		x+=j;<br>    	&#125;<br>    	cout&lt;&lt;x&lt;&lt;endl;<br>    	cout&lt;&lt;endl;<br>    &#125;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p><a id="demo1"></a></p>
+<h3 id="HDU1005-Number-Sequence"><a href="#HDU1005-Number-Sequence" class="headerlink" title="HDU1005:Number Sequence"></a>HDU1005:Number Sequence</h3><blockquote><p>这题乍一看还挺简单的，<del>实际上就是很简单</del>，不过还是遇到了一些小问题的。</p>
+</blockquote>
+<br>
+<p class="note note-warning" style="font-weight: bold;font-size:1.2em;">
+问题一：程序一开始跑就直接退出了。
+</p>
+<p style="font-weight: bold;">
+解决：
+</p>
+在经过几个错误排查后，我发现是因为数组开太大了导致的。
+
+<p><a id="demo2"></a></p>
+<h3 id="HDU1021-Fibonacci-Again"><a href="#HDU1021-Fibonacci-Again" class="headerlink" title="HDU1021:Fibonacci Again"></a>HDU1021:Fibonacci Again</h3><blockquote><p>这题让我想想。</p>
+</blockquote>
+
+<h3 id="HDU1061-Rightmost-Digit"><a href="#HDU1061-Rightmost-Digit" class="headerlink" title="HDU1061:Rightmost Digit"></a>HDU1061:Rightmost Digit</h3><blockquote><p>这题让我想想。</p>
+</blockquote>
                 
               </div>
             
@@ -442,9 +471,15 @@
             
               
               
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - CrilyK">
                     <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
                   </span>
                 </a>
               
