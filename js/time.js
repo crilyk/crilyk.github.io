@@ -90,7 +90,7 @@ function createClockElements() {
     // 添加外圈刻度线
     for (let i = 0; i < 60; i++) {
         const angle = i * 6 * (Math.PI / 180);
-        const x = 194 * Math.sin(angle) + 200;
+        const x = 193 * Math.sin(angle) + 200;
         const y = -193 * Math.cos(angle) + 200;
 
         const tick = document.createElement('div');
@@ -121,8 +121,8 @@ function createClockElements() {
     // 垂直于中心刻度线 (内圈，介于罗马数字和希腊字母之间)
     for (let i = 0; i < 60; i++) {
         const angle = i * 6 * (Math.PI / 180);
-        const x = 151 * Math.sin(angle) + 200;
-        const y = -151 * Math.cos(angle) + 200;
+        const x = 150 * Math.sin(angle) + 200;
+        const y = -150 * Math.cos(angle) + 200;
 
         if (i % 5 === 0) {
             // 对于每5分钟的刻度，使用绿色棱形
@@ -130,7 +130,7 @@ function createClockElements() {
             diamond.style.position = 'absolute';
             diamond.style.width = '8px';
             diamond.style.height = '20px';
-            diamond.style.backgroundColor = (i === 45) ? '#D26F0D' : '#88a4c3'; // 灰色色，但9点位置保持绿色
+            diamond.style.backgroundColor = (i === 15) ? '#D26F0D' : '#88a4c3'; // 灰色色，但9点位置保持绿色
             diamond.style.left = `${x}px`;
             diamond.style.top = `${y}px`;
             diamond.style.transform = `translate(-50%, -50%) rotate(${i * 6 + 180}deg)`;
@@ -285,8 +285,8 @@ function updateClock() {
     // 计算旋转角度
     // 最左边是指示器，所以加270。旋转方向需要是顺时针的，所以加负号
     // 外圈分钟，内圈小时
-    const romanAngle = 270 - (hours * 30);
-    const greekAngle = 270 + (minutes * 6 + seconds * 0.1);
+    const romanAngle = 90 - (hours * 30);
+    const greekAngle = 90 + (minutes * 6 + seconds * 0.1);
     // 外圈秒钟，内圈分钟
     //const romanAngle = 270 - (minutes * 30);
     //const greekAngle = 270 + (seconds * 6);
@@ -319,7 +319,7 @@ function adjustClockSize() {
     // 应用样式
     clockContainer.style.transform = `scale(${scale})`;
     clockContainer.style.position = 'fixed';
-    clockContainer.style.right = '-14%';
+    clockContainer.style.right = '91%';
     clockContainer.style.top = '53%';
     clockContainer.style.transformOrigin = 'center center';
     clockContainer.style.marginTop = '-200px'; // 假设时钟高度约为400px，使垂直居中
@@ -356,7 +356,7 @@ function setupClockContainer(clockContainer) {
 
     // 将日期显示左移
     dateDisplay.style.position = 'absolute';
-    dateDisplay.style.right = '48%';
+    dateDisplay.style.right = '0%';
     dateDisplay.style.top = '100%';
     dateDisplay.style.transform = 'scale(0.5)';
     dateDisplay.style.transformOrigin = 'top';
