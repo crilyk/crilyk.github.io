@@ -158,7 +158,7 @@ function createRotatingContainers() {
     const romanContainer = document.createElement('div');
     romanContainer.className = 'rotating-container roman-container';
     romanContainer.style.position = 'absolute';
-    romanContainer.style.width = '260px';
+    romanContainer.style.width = '261px';
     romanContainer.style.height = '260px';
     romanContainer.style.left = '50%';
     romanContainer.style.top = '50%';
@@ -168,8 +168,8 @@ function createRotatingContainers() {
     const greekContainer = document.createElement('div');
     greekContainer.className = 'rotating-container greek-container';
     greekContainer.style.position = 'absolute';
-    greekContainer.style.width = '360px';
-    greekContainer.style.height = '360px';
+    greekContainer.style.width = '361px';
+    greekContainer.style.height = '355px';
     greekContainer.style.left = '50%';
     greekContainer.style.top = '50%';
     greekContainer.style.transform = 'translate(-50%, -50%)';
