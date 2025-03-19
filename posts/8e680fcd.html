@@ -24,13 +24,13 @@
 <meta property="og:site_name" content="Crilyk">
 <meta property="og:description" content="算法介绍及实现流程">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://totato.com/posts/8e680fcd.htm/LabelImg.jpg">
+<meta property="og:image" content="http://totato.com/posts/8e680fcd/LabelImg.jpg">
 <meta property="article:published_time" content="2025-03-19T14:14:51.000Z">
 <meta property="article:modified_time" content="2025-03-19T14:33:14.975Z">
 <meta property="article:author" content="Crilyk">
 <meta property="article:tag" content="练习记录">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://totato.com/posts/8e680fcd.htm/LabelImg.jpg">
+<meta name="twitter:image" content="http://totato.com/posts/8e680fcd/LabelImg.jpg">
   
   
   
@@ -355,7 +355,7 @@
 
 <h2 id="背景分析及数据描述"><a href="#背景分析及数据描述" class="headerlink" title="背景分析及数据描述"></a>背景分析及数据描述</h2><h3 id="背景分析"><a href="#背景分析" class="headerlink" title="背景分析"></a>背景分析</h3><p>随着计算机视觉技术的快速发展，深度学习和传统机器学习算法在图像分类和物体识别中的应用得到了广泛的关注。在实际应用中，鱼类识别作为一种典型的图像分类任务，对于水产养殖、渔业监控以及海洋生物多样性研究等领域有着重要的意义。尤其是在水下环境中，图像识别的准确性和高效性对于提高水产资源管理、智能监控、生态研究等方面的工作具有不可替代的作用。<br>本项目通过三种不同的模型：支持向量机（SVM）、卷积神经网络（CNN）和YOLOv5，分别实现对鱼类的图像识别，选用一组传统方法与两种深度学习算法，其中深度学习算法又选择了一种双步目标检测算法与一种单步目标检测算法，通过比较这三种方法在鱼类识别中的性能和特点，探索它们在实际应用中的优劣和适用场景。</p>
 <h3 id="数据描述"><a href="#数据描述" class="headerlink" title="数据描述"></a>数据描述</h3><p>本项目数据集取自网络，<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1x90mrqGLvOy7U0f2fAMQGg">数据集下载地址</a>，提取码:pa7l。文件中提供了用于训练的鱼类图像数据。其中共计23种鱼类，每个子目录代表一个类别（标签），其中包含了属于该类别的图像文件。这些图像文件主要以.png格式存储，图像总量达到两万多张。</p>
-<h2 id="人工智能算法模型设计、选择与问题解决思路"><a href="#人工智能算法模型设计、选择与问题解决思路" class="headerlink" title="人工智能算法模型设计、选择与问题解决思路"></a>人工智能算法模型设计、选择与问题解决思路</h2><h3 id="YOLOv5"><a href="#YOLOv5" class="headerlink" title="YOLOv5"></a>YOLOv5</h3><h4 id="数据处理方法"><a href="#数据处理方法" class="headerlink" title="数据处理方法"></a>数据处理方法</h4><p><img src="/posts/8e680fcd.htm/LabelImg.jpg" srcset="/img/loading.gif" lazyload alt="LabelImg标注过程展示"></p>
+<h2 id="人工智能算法模型设计、选择与问题解决思路"><a href="#人工智能算法模型设计、选择与问题解决思路" class="headerlink" title="人工智能算法模型设计、选择与问题解决思路"></a>人工智能算法模型设计、选择与问题解决思路</h2><h3 id="YOLOv5"><a href="#YOLOv5" class="headerlink" title="YOLOv5"></a>YOLOv5</h3><h4 id="数据处理方法"><a href="#数据处理方法" class="headerlink" title="数据处理方法"></a>数据处理方法</h4><p><img src="/posts/8e680fcd/LabelImg.jpg" srcset="/img/loading.gif" lazyload alt="LabelImg标注过程展示"></p>
 <h3 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h3><h3 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h3>
                 
               </div>
