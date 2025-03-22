@@ -46,7 +46,7 @@ const safeGoFun = {
     NzcheckLocalSite: async (url) => {
       try {
         // 白名单地址则不修改href
-        const safeUrls = ["localhost:4000", "ganxb2.com", "blog.ganxb2.com"];
+        const safeUrls = ["localhost:4000", "https://crilyk.github.io/", "https://crilyk.github.io/"];
         let isOthers = false;
         for (let i = 0; i < safeUrls.length; i++) {
           const ele = safeUrls[i];

@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>
-      安全中心 | 博客名称 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐
+      安全中心 | CrilyK
     </title>
     <link rel="icon" class="icon-favicon" href="/" />
     <link
@@ -409,7 +409,7 @@
         <div class="flex-box">
           <div class="flex-contain">
             <div class="logo-img">
-              <p class="blog-name">博客名称</p>
+              <p class="blog-name">CrilyK</p>
               <p class="blog-description"></p>
             </div>
 
@@ -423,11 +423,11 @@
           </div>
           <div class="footer flex-footer">
             ©2011-2023
-            <a href="https://blog.ganxb2.com" class="blog-name"
-              ><span>博客名称</span></a
+            <a href="https://crilyk.github.io/" class="blog-name"
+              ><span>CrilyK</span></a
             >
             版权所有
-            <!-- <span class="blog-name">廿壴(ganxb2)</span> 版权所有 -->
+            <!-- <span class="blog-name">CrilyK(ganxb2)</span> 版权所有 -->
           </div>
         </div>
       </div>
@@ -441,15 +441,15 @@
       const config = {
         // 标题
         title:
-          "廿壴(ganxb2)安全中心 | 廿壴(ganxb2)网客互动分享宇宙 - 探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
+          "安全中心 | Crilyk",
         // 地址栏图标
-        iconFavicon: "https://blog.ganxb2.com/img/favicon.ico",
+        iconFavicon: "themes/fluid/source/img/06.png",
         // 二维码地址
         mpImgSrc: "/img/wxgzh.webp",
         // 博客名称
-        blogName: "廿壴博客",
+        blogName: "CrilyK",
         // 博客描述
-        blogDescription: "探讨WEB技术.交流日常生活.感悟短暂人生.分享简单快乐",
+        blogDescription: "欲既不生，既是真静",
         // 白名单
         safeUrl: [
           // 平台 常用平台不用改哈
@@ -474,15 +474,15 @@
 
           // 好友博客 增加自己的博客友链
         ],
-        tipsTextError: "链接错误，关闭页面返回廿壴(ganxb2)",
+        tipsTextError: "链接错误，关闭页面返回CrilyK",
         tipsTextDownload:
           // "从廿壴(ganxb2)微信公众号获取暗号≖‿≖✧ o‿≖✧(๑•̀ㅂ•́)و✧",
-          "(๑•̀ㅂ•́)و✧“廿壴博客”微信公众号关注走一波o‿≖✧",
+          "(๑•̀ㅂ•́)و✧“CrilyK”很高兴遇见你o‿≖✧",
         tipsTextDanger: "该网址未在确认的安全范围内",
         tipsTextSuccess: "该网址在确认的安全范围内",
         textDanger:
           "您即将离开廿壴博客去往如下网址，请注意您的账号隐私安全和财产安全：",
-        textSuccess: "您即将离开廿壴博客去往如下网址",
+        textSuccess: "您即将离开 CrilyK 去往如下网址",
         // 后续改成leancloud获取(下载验证码)
         wpValidate: "9498",
       };
