@@ -27,7 +27,7 @@ const safeGoFun = {
               // encodeURIComponent() URI编码
               ele.setAttribute(
                 "href",
-                "/go.html?goUrl=" + encodeURIComponent(eleHref)
+                "/xml/go.html?goUrl=" + encodeURIComponent(eleHref)
               );
             } else if (
               !(await safeGoFun.NzcheckLocalSite(eleHref)) &&
@@ -35,7 +35,7 @@ const safeGoFun = {
             ) {
               ele.setAttribute(
                 "href",
-                "/go.html?goUrl=" + encodeURIComponent(eleHref) + "&type=goDown"
+                "/xml/go.html?goUrl=" + encodeURIComponent(eleHref) + "&type=goDown"
               );
             }
           }
@@ -46,7 +46,7 @@ const safeGoFun = {
     NzcheckLocalSite: async (url) => {
       try {
         // 白名单地址则不修改href
-        const safeUrls = ["localhost:4000", "https://crilyk.github.io/", "https://crilyk.github.io/"];
+        const safeUrls = ["localhost:4000", "https://crilyk.github.io/"];
         let isOthers = false;
         for (let i = 0; i < safeUrls.length; i++) {
           const ele = safeUrls[i];
