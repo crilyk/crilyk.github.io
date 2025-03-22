@@ -27,7 +27,7 @@ const safeGoFun = {
               // encodeURIComponent() URI编码
               ele.setAttribute(
                 "href",
-                "/go.html?goUrl=" + encodeURIComponent(eleHref)
+                "/pages/go.html?goUrl=" + encodeURIComponent(eleHref)
               );
             } else if (
               !(await safeGoFun.NzcheckLocalSite(eleHref)) &&
@@ -35,7 +35,7 @@ const safeGoFun = {
             ) {
               ele.setAttribute(
                 "href",
-                "/go.html?goUrl=" + encodeURIComponent(eleHref) + "&type=goDown"
+                "/pages/go.html?goUrl=" + encodeURIComponent(eleHref) + "&type=goDown"
               );
             }
           }
