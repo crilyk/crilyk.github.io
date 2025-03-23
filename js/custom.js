@@ -117,3 +117,4 @@ var a_idx=0;function delay(){$(".buryit").removeAttr("onclick")}jQuery(document)
 		// 	  //绑定鼠标左键
 		// 	  $("body").bind("contextmenu",addTips)
 		//   });
+

@@ -1,0 +1,9 @@
+
+.code pre, .gutter pre{
+   overflow-y:auto;
+   max-height: 300px;
+   
+}
+.gutter pre::-webkit-scrollbar{
+    display: none;
+}
