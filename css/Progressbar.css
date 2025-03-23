@@ -1,9 +1,10 @@
 
-.code pre, .gutter pre{
+td.code pre, td.gutter pre{
    overflow-y:auto;
+   overflow-x:auto;
    max-height: 300px;
    
 }
-.gutter pre::-webkit-scrollbar{
+td.gutter pre::-webkit-scrollbar{
     display: none;
 }
