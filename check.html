@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粒子</title>
+</head>
+<link rel="stylesheet" href="cursor.css">
+<style>
+    body{
+    background-image: url('carousel.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    canvas {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+    #d {
+        background: rgb(28,28,28,0.8);
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-left: 240px;
+        width:1350px;
+        min-height: 90ex;
+        text-align:center;
+    }
+</style>
+<body>
+<div id="d">
+<canvas id="canvas"></canvas>
+<div id="easterEggNotice"
+     style="display: none; position: fixed; color: white;
+                border-radius: 5px;">
+    🔥彩蛋触发成功！这里是阿米娅！
+</div>
+<script src="index.js"></script>
+</div>
+</body>
+</html>

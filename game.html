@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>明日方舟问卷调查</title>
+</head>
+<link rel="stylesheet" href="cursor.css">
+<style>
+    body{
+        background-image: url('carousel.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #d {
+        background: rgb(28,28,28,0.8);
+        margin-top: 270px;
+        margin-right: 100px;
+        margin-left: 480px;
+        width:920px;
+        min-height: 40ex;
+        text-align:center;
+    }
+    input {
+        width:100px;
+        height:40px;
+    }
+    h1{
+        color: white;
+    }
+    h2{
+        color:  #E8E8E8;
+    }
+</style>
+<body>
+<form action="check.html" method="get">
+<div id="d">
+    <br><br><br>
+    <h1>问卷结果已提交，感谢您的参与！</h1>
+    <h2>点击确定按钮领取600合成玉：</h2>
+    <input type="button" onmouseover="move(this);" onclick="alert('骗你的');" value="确定" />
+    <input type="submit" value="不用了" />
+    <script src="cursor.js" defer></script>
+</div>
+</form>
+</body>
+
+<script type="text/javascript" >
+    var height = document.documentElement.clientHeight - 100;    //按钮可能上下移动的距离
+    var width = document.documentElement.clientWidth - 40;        //按钮可能左右移动的距离
+    function move(obj) {
+        obj.style.position = "absolute";
+        obj.style.top = Math.random() * height + "px";
+        obj.style.left = Math.random() * width + "px";
+    }
+    function cancel() {
+        alert("你已放弃领奖，谢谢！");
+        window.close();
+    }
+</script>
+</html>

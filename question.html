@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>明日方舟问卷调查</title>
+  <link rel="stylesheet" href="cursor.css">
+    <style>
+        body{
+
+            background-image: url('carousel.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .index{
+            margin: auto;
+            width:920px;
+            min-height: 125ex;
+            background: rgb(28,28,28,0.8);
+        }
+        h1{
+            background-color:rgb(0,0,0);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        legend {
+            color: white;
+        }
+        input[type="radio"] + label {
+            color: #E8E8E8;
+        }
+        input[type="radio"]:checked + label  {
+            color:#1874CD;
+        }
+        input[type="checkbox"] + label {
+            color: #E8E8E8;
+        }
+        input[type="checkbox"]:checked + label  {
+            color:#1874CD;
+        }
+        button {
+            display: block;              /* 独占一行 */
+            margin: 20px auto;           /* 上下 20px，左右自动居中 */
+            padding: 10px 70px;          /* 内边距 */
+            font-size: 20px;             /* 字体大小 */
+            color: white;                /* 文字白色 */
+            background: linear-gradient(to bottom, 	#075378, #0c7eb6); /* 蓝到黑渐变 */
+            border: 2px solid white;                /* 去掉边框 */
+            cursor: pointer;             /* 鼠标变手型 */
+            transition: 0.3s;            /* 平滑过渡 */
+        }
+        button:hover {
+            background: linear-gradient(to bottom, #0c7eb6, #075378);
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+<body>
+<script src="cursor.js" defer></script>
+<div class="index">
+    <form action="game.html" method="get">
+    <h1>【弧光作战】玩法调研问卷</h1>
+        <span style="color: white;">您的游戏UID：</span>&nbsp;&nbsp;<input type="text" name="username" required />
+        </p>
+        <fieldset id="main-options" >
+            <legend>请问博士是否体验了本次危机合约【弧光作战】的内容？</legend>
+            <div>
+                <input type="radio" id="one" name="contact" value="one">
+                <label for="one">积极参与，直到达成我的目标为止</label>
+            </div>
+            <div>
+                <input type="radio" name="contact" id="two" value="two">
+                <label for="two">尝试过，但暂时没有深入体验</label>
+            </div>
+            <div>
+                <input type="radio"  name="contact" id="three" value="three">
+                <label for="three">知道，但是没有玩过</label>
+            </div>
+            <div>
+                <input type="radio"  name="contact" id="four" value="four" checked>
+                <label for="four">不知道有这个东西</label>
+            </div>
+        </fieldset>
+        <fieldset id="extra-options" style="display:none; margin-top:10px;">
+            <legend>对于本次危机合约【弧光作战】的内容，您体验后的评价如何？</legend>
+            <div>
+                <input type="radio" id="5" name="contact2" value="5" checked>
+                <label for="5">5分-非常满意</label>
+            </div>
+            <div>
+                <input type="radio" id="4" name="contact2" value="4">
+                <label for="4">4分-比较满意</label>
+            </div>
+            <div>
+                <input type="radio" id="3" name="contact2" value="3">
+                <label for="3">3分-一般</label>
+            </div>
+            <div>
+                <input type="radio" id="2" name="contact2" value="2">
+                <label for="2">2分-比较不满意</label>
+            </div>
+            <div>
+                <input type="radio" id="1" name="contact2" value="1">
+                <label for="1">1分-非常不满意</label>
+            </div>
+            <div>
+                <input type="radio" id="0" name="contact2" value="0">
+                <label for="0">没注意过，无法评价</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>请问您参与危机合约【弧光作战】的后续目标是什么？</legend>
+            <div>
+                <input type="radio" id="one1" name="contact3" value="one1">
+                <label for="one1">收集蚀刻章</label>
+            </div>
+            <div>
+                <input type="radio" name="contact3" id="two2" value="two2">
+                <label for="two2">挑战更高的难度</label>
+            </div>
+            <div>
+                <input type="radio"  name="contact3" id="three3" value="three3">
+                <label for="three3">喜欢坐牢</label>
+            </div>
+            <div>
+                <input type="radio"  name="contact3" id="four4" value="four4" checked>
+                <label for="four4">我真的不知道怎么编了</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>过去一年，您在哪些平台玩过游戏？</legend>
+            <div>
+                <input type="radio" id="one11" name="contact4" value="one11">
+                <label for="one11">移动设备(手机、平板电脑)</label>
+            </div>
+            <div>
+                <input type="radio" name="contact4" id="two22" value="two22">
+                <label for="two22">电脑(台式、笔记本电脑)</label>
+            </div>
+            <div>
+                <input type="radio"  name="contact4" id="three33" value="three33">
+                <label for="three3">主机设备(PS4、PS5、NS、Xbox等)</label>
+            </div>
+            <div>
+                <input type="radio"  name="contact4" id="four44" value="four44" checked>
+                <label for="four44">其他</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>过去一年内，您玩得最多的手机游戏类型有哪些？</legend>
+            <div>
+                <input type="checkbox" id="a" name="contact5" value="a">
+                <label for="a">休闲竞技类(第五人格等)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="contact5" id="b" value="b">
+                <label for="b">Roguelike类(月圆之夜等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="c" value="c">
+                <label for="c">卡牌RPG类(明日方舟等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="d" value="d">
+                <label for="d">音乐/舞蹈类(Cytus、Deemo、喵斯快跑等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="e" value="e">
+                <label for="e">MOBA类(王者荣耀、英雄联盟手游等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="f" value="f">
+                <label for="f">战旗类(天地劫等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="g" value="g">
+                <label for="g">放置类(最强蜗牛等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="h" value="h">
+                <label for="h">MMORPG类(燕云十六声等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="i" value="h">
+                <label for="i">战术竞技类(和平精英等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="j" value="h">
+                <label for="j">乙女类(恋与深空等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="k" value="h">
+                <label for="k">集换式卡牌类(炉石传说等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="l" value="h">
+                <label for="l">模拟经营类(摩尔庄园等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="m" value="h">
+                <label for="m">策略类(三国：谋定天下等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="n" value="h">
+                <label for="n">动作类(绝区零等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="o" value="h">
+                <label for="o">沙盒类(我的世界等)</label>
+            </div>
+            <div>
+                <input type="checkbox"  name="contact5" id="p" value="h">
+                <label for="p">社交类(蛋仔派对等)</label>
+            </div>
+        </fieldset>
+        <button type="submit">提交</button>
+    </form>
+</div>
+</body>
+<script>
+    // 获取前三个选项的 radio
+    const mainRadios = document.querySelectorAll('#main-options input[type="radio"]');
+    const extraFieldset = document.getElementById('extra-options');
+
+    mainRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            // 如果选择前三个之一，就显示新选项
+            if(radio.value === 'one' || radio.value === 'two' || radio.value === 'three'){
+                extraFieldset.style.display = 'block';
+            }else {
+                extraFieldset.style.display = 'none';
+            }
+        });
+    });
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+        const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+        let checked = false;
+        checkboxes.forEach(cb => {
+            if(cb.checked) checked = true;
+        });
+        if(!checked){
+            e.preventDefault(); // 阻止表单提交
+            alert("请至少勾选一个选项！");
+        }
+    });
+</script>
+</html>
